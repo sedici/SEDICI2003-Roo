@@ -27,6 +27,7 @@
  */
 package org.sedici2003.api;
 
+import ar.edu.unlp.sedici.sedici2003.service.SeDiCI2003Manager;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -60,6 +61,7 @@ public class AppTest
      */
     public void testApp()
     {
+    	SeDiCI2003Manager.prepare(null);
         assertTrue( true );
     }
 }
