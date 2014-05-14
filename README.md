@@ -1,7 +1,5 @@
-DSpace-SEDICI-svn
+SEDICI2003-Roo 
 =================
-
-# DSpace 1.8.2 @ SEDICI (UNLP) SVN mirror
 
 ## Descripción
 Proyecto generado con Spring Roo, basado en Spring y aspectj que provee:
