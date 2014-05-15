@@ -16,29 +16,29 @@
     limitations under the License.
 
 -->
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
-  <javaee:display-name>sedici2003.2</javaee:display-name>
-  <javaee:description>Roo generated sedici2003 application</javaee:description>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>sedici2003.2</display-name>
+  <description>Roo generated sedici2003 application</description>
   <context-param>
-    <javaee:param-name>defaultHtmlEscape</javaee:param-name>
-    <javaee:param-value>true</javaee:param-value>
+    <param-name>defaultHtmlEscape</param-name>
+    <param-value>true</param-value>
   </context-param>
   <context-param>
-    <javaee:param-name>contextConfigLocation</javaee:param-name>
-    <javaee:param-value>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
     	classpath*:META-INF/spring/sedici2003*.xml
-    </javaee:param-value>
+    </param-value>
   </context-param>
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
     <init-param>
-      <javaee:param-name>encoding</javaee:param-name>
-      <javaee:param-value>UTF-8</javaee:param-value>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
     </init-param>
     <init-param>
-      <javaee:param-name>forceEncoding</javaee:param-name>
-      <javaee:param-value>true</javaee:param-value>
+      <param-name>forceEncoding</param-name>
+      <param-value>true</param-value>
     </init-param>
   </filter>
   <filter>
@@ -53,8 +53,8 @@
     <filter-name>Spring OpenEntityManagerInViewFilter</filter-name>
     <filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
     <init-param>
-      <javaee:param-name>entityManagerFactoryBeanName</javaee:param-name>
-      <javaee:param-value>entityManagerFactorySeDiCI2003</javaee:param-value>
+      <param-name>entityManagerFactoryBeanName</param-name>
+      <param-value>entityManagerFactorySeDiCI2003</param-value>
     </init-param>
   </filter>
   <filter-mapping>
@@ -74,14 +74,14 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
   <listener>
-    <javaee:listener-class>org.springframework.web.context.ContextLoaderListener</javaee:listener-class>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
   <servlet>
     <servlet-name>sedici2003</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
-      <javaee:param-name>contextConfigLocation</javaee:param-name>
-      <javaee:param-value>/WEB-INF/spring/webmvc-config.xml</javaee:param-value>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/spring/webmvc-config.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
