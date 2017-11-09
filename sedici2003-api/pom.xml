@@ -23,10 +23,10 @@
     <artifactId>sedici2003</artifactId>
     <groupId>ar.edu.unlp.sedici</groupId>
     <version>1.8.2</version>
+    <relativePath>..</relativePath>
   </parent>
   <artifactId>sedici2003-api</artifactId>
   <name>sedici2003-api</name>
-  <url>http://maven.apache.org</url>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

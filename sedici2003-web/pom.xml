@@ -40,7 +40,7 @@
 		<dependency>
 			<groupId>ar.edu.unlp.sedici</groupId>
 			<artifactId>sedici2003-api</artifactId>
-			<type>jar</type>
+    		<version>1.8.2</version>
 		</dependency>
 		
 		<dependency>
