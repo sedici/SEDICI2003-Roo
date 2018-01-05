@@ -30,7 +30,7 @@
 	</modules>
 	<properties>
 		<roo.version>1.1.5.RELEASE</roo.version>
-		<spring.version>3.1.4.RELEASE</spring.version>
+		<spring.version>3.2.16.RELEASE</spring.version>
 		<aspectj.version>1.8.13</aspectj.version>
 		<slf4j.version>1.5.11</slf4j.version>
 
@@ -177,6 +177,14 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
 			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.aspectj</groupId>
+					<artifactId>aspectjweaver</artifactId>
+				</exclusion>
+			<exclusion>
+        </exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -216,12 +224,6 @@
 					<artifactId>jaxb-impl</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.0.0.GA</version>
-			<classifier />
 		</dependency>
 		<dependency>
 			<groupId>cglib</groupId>
