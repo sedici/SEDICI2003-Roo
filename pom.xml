@@ -21,7 +21,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>sedici2003</artifactId>
 	<groupId>ar.edu.unlp.sedici</groupId>
-	<version>1.8.2</version>
+	<version>5.8</version>
 	<packaging>pom</packaging>
 	<name>SeDiCI2003 Parent</name>
 	<modules>
@@ -87,6 +87,13 @@
 			<url>http://spring-roo-repository.springsource.org/release</url>
 		</pluginRepository>
 	</pluginRepositories>
+        <distributionManagement>
+            <repository>
+                <id>maven.prebi.unlp.edu.ar</id>
+                <name>maven-releases</name>
+                <url>http://maven.prebi.unlp.edu.ar:8081/artifactory/libs-release-local</url>
+            </repository>
+        </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>

@@ -23,7 +23,7 @@
 	<parent>
 		<artifactId>sedici2003</artifactId>
 		<groupId>ar.edu.unlp.sedici</groupId>
-		<version>1.8.2</version>
+		<version>5.8</version>
 		<relativePath>..</relativePath>
 	</parent>
 	
